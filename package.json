@@ -1,0 +1,16 @@
+{
+  "name": "rotalab",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "description": "Laboratório visual de operações logísticas com motor C++/WebAssembly",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node --check dist/app.js && node --check dist/planner.js && node --check dist/laboratory.js && node --check dist/laboratory-ui.js",
+    "build:engine": "python scripts/build_engine.py"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,16 @@
+.tools/
+__pycache__/
+*.exe
+artifacts/*.tar.gz
+.openai/local/
+
+
+node_modules/
+engine/optimizer
+*.obj
+*.o
+*.tmp
+.env
+.env.*
+.DS_Store
+*.pdb
