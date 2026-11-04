@@ -2,6 +2,8 @@
 
 **Simulação de entregas e análise de decisões de roteamento.**
 
+[**Abrir demonstração**](https://jvickz.github.io/rotalab/) · [Arquitetura](docs/ARCHITECTURE.md) · [Testes automatizados](https://github.com/jvickz/rotalab/actions/workflows/ci.yml)
+
 Distribua pedidos entre veículos, compare planos e teste como eles respondem a trânsito mais lento. O motor C++ roda no navegador via WebAssembly; Python executa experimentos em lote.
 
 ![Centro de operações do RotaLab](docs/images/operacao.png)
@@ -31,7 +33,7 @@ Abra **http://127.0.0.1:4173**. O binário WASM está incluído. Use um servidor
 3. Execute o **Laboratório de cenários** e inspecione cada nível de trânsito.
 4. Baixe o CSV ou copie o link do cenário inicial. O link registra cenário e semente, sem incluir incidentes.
 
-A demonstração pública ainda será publicada. [Instruções de publicação](docs/PUBLISHING.md).
+A demonstração é pública e não exige login. [Como atualizar a publicação](docs/PUBLISHING.md).
 
 ## Tecnologias e decisões
 
@@ -41,7 +43,7 @@ A demonstração pública ainda será publicada. [Instruções de publicação](
 | WebAssembly | Execução do motor no navegador, sem API remota |
 | JavaScript / SVG | Simulação, mapa interativo, métricas e experimento |
 | Python | Compilação e benchmark do motor nativo |
-| GitHub Actions | Workflows preparados para testes e publicação estática |
+| GitHub Actions | Testes automatizados e publicação estática |
 
 O projeto explora otimização combinatória e análise de cenários. **Não utiliza um modelo treinado de machine learning.** [Arquitetura, função objetivo e escolhas técnicas](docs/ARCHITECTURE.md).
 
